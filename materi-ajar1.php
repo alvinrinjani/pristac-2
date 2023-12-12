@@ -1,6 +1,7 @@
 <?php
 
-$content = ['Installasi Program', 'Pengenalan JavaScript', 'JavaScript File', 'JavaScript Output'];
+$mainCourse = 'Prologue';
+$content = ['Installasi Program', 'Pengenalan Bash', 'Pengenalan Visual Studio Code', 'Pengenalan JavaScript', 'JavaScript File', 'JavaScript Output'];
 $highlight = [
     "- Visual Studio Code
     <br>
@@ -8,6 +9,8 @@ $highlight = [
     <br>
     - Bash Terminal
     ",
+    "<span class='text-danger'>Perhatikan contoh dan penjelasan guru!<span>",
+    "<span class='text-danger'>Perhatikan contoh dan penjelasan guru!<span>",
     "- JavaScript is the world's most popular programming language.
     <br>
     - JavaScript is the programming language of the Web.
@@ -35,12 +38,12 @@ $highlight = [
     <div class="container">
         <div class="row mt-5">
             <h3 class="text-center text-primary">Materi Pelajaran IT</h3>
-            <h5 class="text-center">(Pertemuan 1)</h5>
+            <h5 class="text-center">(Pertemuan 1: <?= $mainCourse; ?>)</h5>
         </div>
 
         <hr>
         
-        <table class="table">
+        <table class="table table-striped table-hover">
             <thead>
                 <tr>
                     <th scope="col">Content</th>

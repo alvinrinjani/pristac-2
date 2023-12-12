@@ -1,11 +1,12 @@
 <?php
 
-$content = ['Array', 'Contoh', 'Mengakes Nilai Array'];
+$mainCourse = 'Array';
+
+$content = ['Array', 'Contoh', 'Index Array', 'Mengakes Nilai Array'];
 $highlight = [
-    "An array is a special variable, which can hold more than one value.
-    ",
-    "const namaArray = [];
-    ",
+    "An array is a special variable, which can hold more than one value.",
+    "const namaArray = [];",
+    "Index atau Nomor Urut sebuah Array dimulai dari angka 0",
     "console.log(namaArray[index]);"
 ];
 
@@ -24,12 +25,12 @@ $highlight = [
     <div class="container">
         <div class="row mt-5">
             <h3 class="text-center text-primary">Materi Pelajaran IT</h3>
-            <h5 class="text-center">(Pertemuan 3)</h5>
+            <h5 class="text-center">(Pertemuan 3: <?= $mainCourse; ?>)</h5>
         </div>
 
         <hr>
         
-        <table class="table">
+        <table class="table table-striped table-hover">
             <thead>
                 <tr>
                     <th scope="col">Content</th>
@@ -48,7 +49,7 @@ $highlight = [
 
         <div class="row justify-content-between">
             <div class="col"><a href="materi-ajar.php"><button type="button" class="btn btn-danger">Back</button></a></div>
-            <div class="col text-end"><a href="materi-ajar3.php"><button type="button" class="btn btn-success">Next</button></a></div>
+            <div class="col text-end"><a href="materi-ajar4.php"><button type="button" class="btn btn-success">Next</button></a></div>
         </div>
 
     </div>

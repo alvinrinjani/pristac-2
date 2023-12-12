@@ -12,36 +12,20 @@ $downloads = ['VSCodeUserSetup-x64-1.84.0.exe', 'VSCodeUserSetup-arm64-1.70.2.ex
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PRISTAC 2</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <!-- Container Begin -->
     <div class="container">
-        <div class="row mt-5">
-            <h3 class="text-center text-primary">Silahkan Download Program Berikut</h3>
-        </div>
+      <div class="row justify-content-center mt-5">
+        <img src="assets/img/ahlan.png" class="img-fluid img-ahlan text-center" alt="...">
+      </div>
 
-        <hr>
-
-        <table class="table">
-            <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">Programs</th>
-                <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php for($i = 0; $i < count($programs); $i++): ?>
-                <tr>
-                    <th scope="row"><?= $i + 1; ?></th>
-                    <td><?= $programs[$i]; ?></td>
-                    <td><a href="assets/programs/<?= $downloads[$i]; ?>" download><button type="button" class="btn btn-primary">Download</button></a></td>
-                </tr>
-                <?php endfor; ?>
-            </tbody>
-        </table>
-
-        <a href="materi-ajar.php"><button type="button" class="btn btn-danger">Lihat Materi Pelajaran</button></a>
+      <hr>
+      
+      <div class="row">
+        <a href="materi-ajar.php" class="text-center"><button type="button" class="btn btn-success">Ready to Learn</button></a>
+      </div>
 
     </div>
     <!-- End of Container -->

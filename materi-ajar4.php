@@ -1,20 +1,14 @@
 <?php
 
-$mainCourse = 'Variable, Operators, Data Types';
-$content = ['Variable', 'Operator', 'Tipe Data'];
+$mainCourse = 'Functions';
+$page = 4;
+
+$content = [
+
+];
+
 $highlight = [
-    "var namaVariable= ...
-    <br>
-    let namaVariable = ...
-    <br>
-    const namaVariable = ...
-    ",
-    "<ul>
-        <li>Operator Aritmatika: <strong style='color:red;'>+, -, *, **, /, %, ++, --</strong></<li>
-        <li>Operator Komparasi (perbandingan): <strong style='color:red;'>==, ===, !=, !==, >, <, >=, <=, ?</strong></<li>
-        <li>Operator Logika: <strong style='color:red;'>&&, ||, !</strong></<li>
-    </ul>",
-    "string, number, bigint, boolean, undefined, null, symbol, object"
+    
 ];
 
 ?>
@@ -32,7 +26,7 @@ $highlight = [
     <div class="container">
         <div class="row mt-5">
             <h3 class="text-center text-primary">Materi Pelajaran IT</h3>
-            <h5 class="text-center">(Pertemuan 2: <?= $mainCourse; ?>)</h5>
+            <h5 class="text-center">(Pertemuan 4: <?= $mainCourse; ?>)</h5>
         </div>
 
         <hr>
@@ -56,7 +50,7 @@ $highlight = [
 
         <div class="row justify-content-between">
             <div class="col"><a href="materi-ajar.php"><button type="button" class="btn btn-danger">Back</button></a></div>
-            <div class="col text-end"><a href="materi-ajar3.php"><button type="button" class="btn btn-success">Next</button></a></div>
+            <div class="col text-end"><a href="materi-ajar<?= $page + 1; ?>.php"><button type="button" class="btn btn-success">Next</button></a></div>
         </div>
 
     </div>

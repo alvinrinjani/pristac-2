@@ -16,6 +16,7 @@
         <hr>
         
        <ul>
+            <li><a href="download.php" style="text-decoration: none;">Download Program<?= $i; ?></a></li>
         <?php for($i = 1; $i <= 10; $i++): ?>
             <li><a href="materi-ajar<?= $i; ?>.php" style="text-decoration: none;">Pertemuan ke-<?= $i; ?></a></li>
         <?php endfor; ?>
